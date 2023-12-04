@@ -29,7 +29,7 @@ type Game struct {
 	RandomNumber int
 }
 
-// Random number function
+/////////////// Random number function \\\\\\\\\\\\\\\
 
 func (g *Game) NewGame(player Player) {
 	if player.Chances > 0 && player.Chances < 5 {
@@ -42,9 +42,35 @@ func (g *Game) NewGame(player Player) {
 	g.Player = player
 }
 
+/////////////// A function that determines whether it is even or prime \\\\\\\\\\\\\\\
+
+func (g *Game) tuborNotTub() {
+
+	count := 0
+
+	for i := 1; i <= g.RandomNumber; i++ {
+		if g.RandomNumber%i == 0 {
+			count++
+		}
+	}
+	if count == 2 {
+		fmt.Println()
+		fmt.Println("Random number is even")
+		fmt.Println()
+	} else {
+		fmt.Println()
+		fmt.Println("Random number is odd")
+		fmt.Println()
+	}
+}
+
+/////////////// Start Game \\\\\\\\\\\\\\\
+
 func (g *Game) StartGame() {
 	fmt.Printf("Welcome %s\nYour age: %d\nYour favourite number: %d\n", g.Name, g.Old, g.FavouriteNumber)
 	fmt.Println("This is a guessing game")
+	g.tuborNotTub()
+
 	for i := 0; i < g.Chances; i++ {
 		var n int
 		fmt.Printf("%d chance, enter number: ", i+1)
