@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// 1- misol
+/* 1- misol
 
 func main() {
 
@@ -32,6 +32,7 @@ func tuborNotTub(son int) {
 		fmt.Println("toq emas")
 	}
 }
+*/
 
 /* 2- misol
 
@@ -247,6 +248,35 @@ func numOfDigits(num int) int {
 		sum += i
 	}
 	return sum
+}
+*/
+
+/* 12- misol
+
+func main() {
+	var son int
+	fmt.Print("Enter number: ")
+	fmt.Scan(&son)
+	tuborNotTub(son)
+}
+
+func tuborNotTub(son int) {
+	for i := 2; i < son; i++ {
+		if son%i == 0 {
+			if i > 1 {
+				isTub := true
+				for j := 2; j < i; j++ {
+					if i%j == 0 {
+						isTub = false
+						break
+					}
+				}
+				if isTub {
+					fmt.Print(i, " ")
+				}
+			}
+		}
+	}
 }
 */
 
