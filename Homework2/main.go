@@ -438,4 +438,158 @@ func main() {
 	}
 	*/
 
+	////////////////////////////////////////////////////////  switch  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+	/* 1- misol
+
+	var direction string
+	var command int
+
+	fmt.Print("Yo'nalishni tanlang (s/j/q/g): ")
+	fmt.Scan(&direction)
+
+	fmt.Print("Kamandani tanlang (0 - harakatni davom ettir, 1 - chapga buril, 2 - o'ngga buril): ")
+	fmt.Scan(&command)
+
+	// Berilgan kamandaga qarab robot holatini yangilash
+	switch direction {
+	case "s":
+		// Shimolda yo'nalish
+		switch command {
+		case 0:
+			fmt.Println("Robot harakatni davom ettiradi (shimolga)")
+		case 1:
+			fmt.Println("Robot chapga buriladi")
+		case 2:
+			fmt.Println("Robot o'ngga buriladi")
+		}
+	case "j":
+		// Janubda yo'nalish
+		switch command {
+		case 0:
+			fmt.Println("Robot harakatni davom ettiradi (janubga)")
+		case 1:
+			fmt.Println("Robot chapga buriladi")
+		case 2:
+			fmt.Println("Robot o'ngga buriladi")
+		}
+	case "q":
+		// Sharqda yo'nalish
+		switch command {
+		case 0:
+			fmt.Println("Robot harakatni davom ettiradi (sharqqa)")
+		case 1:
+			fmt.Println("Robot chapga buriladi")
+		case 2:
+			fmt.Println("Robot o'ngga buriladi")
+		}
+	case "g":
+		// G'arbda yo'nalish
+		switch command {
+		case 0:
+			fmt.Println("Robot harakatni davom ettiradi (g'arbga)")
+		case 1:
+			fmt.Println("Robot chapga buriladi")
+		case 2:
+			fmt.Println("Robot o'ngga buriladi")
+		}
+	default:
+		fmt.Println("Noto'g'ri yo'nalish")
+	}
+
+	*/
+
+	/* 2- misol
+
+	var direction string
+	var command1, command2 int
+
+	fmt.Print("Yo'nalishni tanlang (s/j/q/g): ")
+	fmt.Scan(&direction)
+
+	fmt.Print("Birinchi kamandani tanlang (0 - o'ngga buril, 1 - chapga buril, 2 - burilish 180): ")
+	fmt.Scan(&command1)
+
+	fmt.Print("Ikkinchi kamandani tanlang (0 - o'ngga buril, 1 - chapga buril, 2 - burilish 180): ")
+	fmt.Scan(&command2)
+
+	switch direction {
+	case "s":
+		// Shimolda yo'nalish
+		switch command1 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (shimolga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (shimolga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (shimolga)")
+		}
+		switch command2 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (shimolga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (shimolga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (shimolga)")
+		}
+	case "j":
+		// Janubda yo'nalish
+		switch command1 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (janubga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (janubga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (janubga)")
+		}
+		switch command2 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (janubga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (janubga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (janubga)")
+		}
+	case "q":
+		// Sharqda yo'nalish
+		switch command1 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (sharqqa)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (sharqqa)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (sharqqa)")
+		}
+		switch command2 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (sharqqa)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (sharqqa)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (sharqqa)")
+		}
+	case "g":
+		// G'arbda yo'nalish
+		switch command1 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (g'arbga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (g'arbga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (g'arbga)")
+		}
+		switch command2 {
+		case 0:
+			fmt.Println("Lakatr o'ngga buriladi (g'arbga)")
+		case 1:
+			fmt.Println("Lakatr chapga buriladi (g'arbga)")
+		case 2:
+			fmt.Println("Lakatr buriladi 180 gradus (g'arbga)")
+		}
+	default:
+		fmt.Println("Noto'g'ri yo'nalish")
+	}
+
+	*/
+
 }
